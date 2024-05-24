@@ -17,10 +17,10 @@
 		439A1AE82C013CD5001F2389 /* APIRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 439A1AE72C013CD5001F2389 /* APIRouter.swift */; };
 		439A1AEA2C013E02001F2389 /* NetworkError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 439A1AE92C013E02001F2389 /* NetworkError.swift */; };
 		439A1AEC2C013E6D001F2389 /* RestAPIClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 439A1AEB2C013E6D001F2389 /* RestAPIClient.swift */; };
-		439A1AEF2C013F8C001F2389 /* AllModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 439A1AEE2C013F8C001F2389 /* AllModel.swift */; };
 		439A1AF12C014108001F2389 /* APIService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 439A1AF02C014108001F2389 /* APIService.swift */; };
 		439A1AF32C0142B4001F2389 /* AllViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 439A1AF22C0142B4001F2389 /* AllViewModel.swift */; };
 		439A1AF52C0149F7001F2389 /* AllCellView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 439A1AF42C0149F7001F2389 /* AllCellView.swift */; };
+		439A1AF72C015FDC001F2389 /* AllModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 439A1AF62C015FDC001F2389 /* AllModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -34,10 +34,10 @@
 		439A1AE72C013CD5001F2389 /* APIRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIRouter.swift; sourceTree = "<group>"; };
 		439A1AE92C013E02001F2389 /* NetworkError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkError.swift; sourceTree = "<group>"; };
 		439A1AEB2C013E6D001F2389 /* RestAPIClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestAPIClient.swift; sourceTree = "<group>"; };
-		439A1AEE2C013F8C001F2389 /* AllModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AllModel.swift; sourceTree = "<group>"; };
 		439A1AF02C014108001F2389 /* APIService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIService.swift; sourceTree = "<group>"; };
 		439A1AF22C0142B4001F2389 /* AllViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AllViewModel.swift; sourceTree = "<group>"; };
 		439A1AF42C0149F7001F2389 /* AllCellView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AllCellView.swift; sourceTree = "<group>"; };
+		439A1AF62C015FDC001F2389 /* AllModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AllModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -119,7 +119,7 @@
 		439A1ADB2C01201A001F2389 /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				439A1AEE2C013F8C001F2389 /* AllModel.swift */,
+				439A1AF62C015FDC001F2389 /* AllModel.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -239,8 +239,8 @@
 				439A1AF32C0142B4001F2389 /* AllViewModel.swift in Sources */,
 				439A1AEC2C013E6D001F2389 /* RestAPIClient.swift in Sources */,
 				439A1ACD2C010AFF001F2389 /* HomeView.swift in Sources */,
+				439A1AF72C015FDC001F2389 /* AllModel.swift in Sources */,
 				439A1AE82C013CD5001F2389 /* APIRouter.swift in Sources */,
-				439A1AEF2C013F8C001F2389 /* AllModel.swift in Sources */,
 				439A1AE32C01332D001F2389 /* LaunchView.swift in Sources */,
 				439A1AEA2C013E02001F2389 /* NetworkError.swift in Sources */,
 				439A1ACB2C010AFE001F2389 /* test_energyApp.swift in Sources */,
