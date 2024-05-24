@@ -9,9 +9,27 @@ import SwiftUI
 
 @main
 struct test_energyApp: App {
+    
+    @State private var isLaunchViewPresented = true
+    @StateObject var network = Network()
+    
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            
+            if !isLaunchViewPresented{
+                HomeView()
+                /*if let _ = authViewModel.emailUser{
+                    HomeView(authViewModel: authViewModel)
+                        .preferredColorScheme(.light)
+                        .environmentObject(network)
+                }else{
+                    AuthenticationView(authViewModel: authViewModel)
+                        .preferredColorScheme(.light)
+                        .environmentObject(network)
+                }*/
+            }else{
+                LaunchView(ispresented: $isLaunchViewPresented)
+            }
         }
     }
 }
