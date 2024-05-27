@@ -12,21 +12,26 @@ public enum APIRouter: URLRequestConvertible{
 
     case getAll
     
-    private var urlPath: String{
-        switch self{
+    private var urlPath: String {
+        
+        switch self {
             case .getAll:
                 return "https://jsonplaceholder.typicode.com/todos"
         }
+        
     }
     
-    private var method: HTTPMethod{
-        switch self{
-        case .getAll:
-            return .get
+    private var method: HTTPMethod {
+        
+        switch self {
+            case .getAll:
+                return .get
         }
+        
     }
     
     public func asURLRequest() throws -> URLRequest {
+        
         let url = try urlPath.asURL()
         var urlRequest = URLRequest(url: url)
         urlRequest.httpMethod = method.rawValue

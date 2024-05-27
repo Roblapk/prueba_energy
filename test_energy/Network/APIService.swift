@@ -14,7 +14,9 @@ protocol APIServiceProtocol{
 class APIService: APIServiceProtocol{
     
     func getAll(completionBlock: @escaping (Result<[AllModel], NetworkError>) -> Void) {
+        
         RestAPIClient.getAll(completionBlock: completionBlock)
+        
     }
     
 }

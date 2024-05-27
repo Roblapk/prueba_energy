@@ -11,6 +11,7 @@ import Alamofire
 class RestAPIClient{
     
     static func request<T: Codable>(type: T.Type, url: APIRouter, completionBlock: @escaping(Result<T, NetworkError>) -> Void){
+        
         AF.request(url).response{ response in
             let result = response.result
             switch result{

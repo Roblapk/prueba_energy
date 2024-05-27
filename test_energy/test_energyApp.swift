@@ -17,16 +17,7 @@ struct test_energyApp: App {
         WindowGroup {
             
             if !isLaunchViewPresented{
-                HomeView()
-                /*if let _ = authViewModel.emailUser{
-                    HomeView(authViewModel: authViewModel)
-                        .preferredColorScheme(.light)
-                        .environmentObject(network)
-                }else{
-                    AuthenticationView(authViewModel: authViewModel)
-                        .preferredColorScheme(.light)
-                        .environmentObject(network)
-                }*/
+                HomeView().environmentObject(network)
             }else{
                 LaunchView(ispresented: $isLaunchViewPresented)
             }

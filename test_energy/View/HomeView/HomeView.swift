@@ -10,6 +10,8 @@ import SwiftUI
 struct HomeView: View {
     
     @StateObject var allViewModel = AllViewModel()
+    @EnvironmentObject var network: Network
+    @State private var showNetworkAlert = false
     
     var body: some View {
         NavigationView{
@@ -33,7 +35,9 @@ struct HomeView: View {
             .navigationTitle("TODOS")
         }.task {
             allViewModel.getAllList()
-        }
+        }.onChange(of: network.connected){ result in
+            showNetworkAlert = result == false
+        }.alert(network.connectionDescription, isPresented: $showNetworkAlert){}
     }
 }
 
